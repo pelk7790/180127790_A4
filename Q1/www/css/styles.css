@@ -1,0 +1,300 @@
+html{
+  font-family: font-family: 'arial', verdana;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+
+}
+
+.right {
+  width: 75%;
+
+}
+
+/* Clear floats after the columns */
+.row {
+  max-width: 960px
+  display: flex;
+  margin: auto;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid pink;
+}
+
+div p img  {
+  vertical-align: left;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border-color: pink;
+}
+
+h4{
+  font-size: 28px;
+  font-family: font-family: 'verdana', arial;
+}
+
+h6{
+  color: white;
+}
+
+p{
+  font-size: 14px;
+  color: black;
+  font-family: font-family: 'verdana', arial;
+}
+
+.sub_div {
+  position: absolute;
+  bottom: -150px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container > div {
+  margin: 12px;
+
+}
+
+div > img{
+  width: 293px;
+  height: 293px;
+}
+
+
+#myImg1:hover {
+  opacity: 0.7;
+}
+
+#myImg2:hover {
+  opacity: 0.7;
+}
+
+#myImg3:hover {
+  opacity: 0.7;
+}
+
+#myImg4:hover {
+  opacity: 0.7;
+}
+
+#myImg5:hover {
+  opacity: 0.7;
+}
+
+#myImg6:hover {
+  opacity: 0.7;
+}
+
+#myImg7:hover {
+  opacity: 0.7;
+}
+
+#myImg8:hover {
+  opacity: 0.7;
+}
+
+#myImg9:hover {
+  opacity: 0.7;
+}
+
+#myImg10:hover {
+  opacity: 0.7;
+}
+
+#myImg11:hover {
+  opacity: 0.7;
+}
+
+#myImg12:hover {
+  opacity: 0.7;
+}
+
+#myImg13:hover {
+  opacity: 0.7;
+}
+
+#myImg14:hover {
+  opacity: 0.7;
+}
+
+#myImg15:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  background-color: rgb(128, 128, 128);
+  /* Fallback color */
+  background-color: rgba(128, 128, 128, 0.8);
+  /* Black w/ opacity */
+  overflow: scroll;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  display: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  margin: 5% 0.02% 20% 25.64%;
+  /* top, right, bottom, left */
+}
+
+.wine-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 600px;
+  height: 600px;
+}
+
+.wine-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 350px;
+  height: 600px;
+  margin: 5% 0.02% 20% 25.64%;
+  /* top, right, bottom, left */
+  max-width: 350px
+  background-color: white;
+}
+
+.main {
+  align: left;
+  padding: 20px;
+  width: 335px;
+  height: 600px;
+  color: black;
+  background-color: white;
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (min-width:600px and max-width: 800px) {
+  .modal-content {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .flex-container {
+    display: inline;
+  }
+
+  img{
+    display: center;
+  }
+
+  .modal-content {
+    display: flex;
+    position: flex;
+    width: 250px;
+    height: 250px;
+    top: 900px;
+    left: 40px;
+    margin-top:95px;
+    /* top, right, bottom, left */
+  }
+
+  .wine-row {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    z-index: 1
+  }
+
+  .wine-text-container {
+    position: absolute;
+    display:inline;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    z-index: -1;
+
+  }
+
+  .left{
+    width: 100%;
+    display: inline;
+  }
+
+  .right{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+  }
+
+  p{
+    display: none;
+  }
+
+.sub_div {
+  position: absolute;
+  bottom: -150px;
+}
+
+  h6{
+    color: white;
+  }
+}
